@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 # from .settings_base import *
+import os
 import environ
 
 env = environ.Env()
@@ -99,7 +100,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd8jqorog8u2ioh',
         'HOST': 'ec2-18-210-191-5.compute-1.amazonaws.com',
-        'PORT': env("DB_PORT"),
+        'PORT': os.environ.get("DB_PORT"),
         'USER': 'cxylghmvbmfnuv',
         'PASSWORD': 'da73c1a4f07457857606216e3b3bbfba37755fad81cfd33e82f948ea57c6d0b9'
     }
