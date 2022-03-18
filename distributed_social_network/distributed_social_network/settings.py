@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-@s#e=vn8ng-#+zz$h@gbw8njfzzt9*2ce8_bx78o(^dk8x(tzr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://deployservertest.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','deployservertest.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://deployservertest.herokuapp.com']
 
 AUTH_USER_MODEL = 'api.User'
@@ -99,7 +99,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd8jqorog8u2ioh',
         'HOST': 'ec2-18-210-191-5.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'PORT': env("DB_PORT"),
         'USER': 'cxylghmvbmfnuv',
         'PASSWORD': 'da73c1a4f07457857606216e3b3bbfba37755fad81cfd33e82f948ea57c6d0b9'
     }
