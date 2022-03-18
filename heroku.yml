@@ -5,4 +5,4 @@ build:
   docker:
     web: distributed_social_network/Dockerfile
 run:
-  web: python /distributed_social_network/manage.py runserver 0.0.0.0:$PORT
+  web: python manage.py runserver 0.0.0.0:$PORT
