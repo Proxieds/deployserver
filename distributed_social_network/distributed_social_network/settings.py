@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-@s#e=vn8ng-#+zz$h@gbw8njfzzt9*2ce8_bx78o(^dk8x(tzr
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://deployservertest.herokuapp.com']
 
 AUTH_USER_MODEL = 'api.User'
 
