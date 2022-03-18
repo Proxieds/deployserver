@@ -97,11 +97,12 @@ WSGI_APPLICATION = 'distributed_social_network.wsgi.application'
 
 DATABASES = {
     'default': {
+        
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd8jqorog8u2ioh',
-        'HOST': 'ec2-18-210-191-5.compute-1.amazonaws.com',
-        'PORT': os.environ.get("DB_PORT"),
-        'USER': 'cxylghmvbmfnuv',
+        'HOST': os.environ.get("DB_HOST", default=env("DB_HOST")),
+        'PORT': os.environ.get("DB_PORT", default=env("DB_PORT")),
+        'USER': os.environ.get("DB_USER", default=env("DB_USER")),
         'PASSWORD': 'da73c1a4f07457857606216e3b3bbfba37755fad81cfd33e82f948ea57c6d0b9'
     }
 }

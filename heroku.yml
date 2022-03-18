@@ -2,7 +2,10 @@ build:
   docker:
     web: distributed_social_network/Dockerfile
   config:
-    DJANGO_SETTINGS_MODULE: Django-BaaS.settings_docker
+    DB_NAME: social_network
+    DB_USER: "cxylghmvbmfnuv"
+    DB_HOST: "ec2-18-210-191-5.compute-1.amazonaws.com"
+    DB_PASSWORD: password
     DB_PORT: 5432
 release:
   command:
