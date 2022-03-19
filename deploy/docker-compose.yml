@@ -5,3 +5,9 @@ services:
       context: ../distributed_social_network
       dockerfile: Dockerfile
     restart: always
+    environment:
+      DB_NAME: d8jqorog8u2ioh
+      DB_USER: username
+      DB_HOST: db
+      DB_PASSWORD: password
+      DB_PORT: 5432
