@@ -18,5 +18,4 @@ COPY --from=builder /app /app
 COPY . /app
 ENV PATH="/app/.venv/bin:$PATH"
 
-CMD python manage.py runserver 0.0.0.0:$PORT
-# CMD sleep 3 && python manage.py migrate && python manage.py runserver [::]:8000
+CMD sleep 3 && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT
