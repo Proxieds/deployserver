@@ -102,7 +102,7 @@ DATABASES = {
         'NAME': 'd8jqorog8u2ioh',
         'HOST': "ec2-18-210-191-5.compute-1.amazonaws.com",
         'PORT': os.environ.get("DB_PORT"),
-        'USER': os.environ.get("DB_USER"),
+        'USER': "cxylghmvbmfnuv",
         'PASSWORD': 'da73c1a4f07457857606216e3b3bbfba37755fad81cfd33e82f948ea57c6d0b9'
     }
 }
