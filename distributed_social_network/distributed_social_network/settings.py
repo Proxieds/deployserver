@@ -99,7 +99,7 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ["DB_NAME"],
+        'NAME': env("DB_NAME"),
         'HOST': "ec2-18-210-191-5.compute-1.amazonaws.com",
         'PORT': 5432,
         'USER': "cxylghmvbmfnuv",
