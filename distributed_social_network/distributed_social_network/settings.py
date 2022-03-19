@@ -98,12 +98,12 @@ WSGI_APPLICATION = 'distributed_social_network.wsgi.application'
 DATABASES = {
     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': env("DB_NAME"),
-        'HOST': "ec2-18-210-191-5.compute-1.amazonaws.com",
-        'PORT': 5432,
-        'USER': "cxylghmvbmfnuv",
-        'PASSWORD': 'da73c1a4f07457857606216e3b3bbfba37755fad81cfd33e82f948ea57c6d0b9'
+        'USER': env("DB_USER"),
+        'PASSWORD': env("DB_PASSWORD"),
+        'HOST': env("DB_HOST"),
+        'PORT': env("DB_PORT"),
     }
 }
 
